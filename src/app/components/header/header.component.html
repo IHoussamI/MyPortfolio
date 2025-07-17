@@ -1,0 +1,28 @@
+<header class="hacking-header">
+  <div class="terminal-bar">
+    <div class="terminal-controls">
+      <span class="control close"></span>
+      <span class="control minimize"></span>
+      <span class="control maximize"></span>
+    </div>
+    
+    <div class="terminal-title">Welcome to Mesk Houssam's portfolio</div>
+    
+    <div class="language-switcher">
+      <button (click)="switchLang('fr')" [class.active]="currentLang === 'fr'">FR</button>
+      <button (click)="switchLang('en')" [class.active]="currentLang === 'en'">EN</button>
+    </div>
+  </div>
+  
+  <nav class="hacking-nav">
+    <a 
+      *ngFor="let link of navLinks"
+      href="#{{link.fragment}}"
+      class="nav-link"
+      [attr.data-text]="(link.display | translate)"
+      (click)="scrollToSection($event, link.fragment)"
+    >
+      {{ link.display | translate }}
+    </a>
+  </nav>
+</header>

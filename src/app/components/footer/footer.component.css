@@ -1,0 +1,222 @@
+.creative-footer {
+    position: relative;
+    background: #0a0a0a;
+    color: #fff;
+    padding: 4rem 2rem;
+    overflow: hidden;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    
+    .footer-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      
+      .light-streaks {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: 
+          linear-gradient(135deg, transparent 60%, rgba(0,255,0,0.03)),
+          linear-gradient(-135deg, transparent 60%, rgba(0,150,255,0.03));
+      }
+      
+      .subtle-dots {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+    }
+    
+    .footer-content {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #0f0;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    
+    /* Quote Section */
+    .quote-section {
+      grid-column: 1 / -1;
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      
+      .section-icon {
+        flex-shrink: 0;
+        width: 50px;
+        height: 50px;
+        background: rgba(0,255,0,0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: #0f0;
+        }
+      }
+      
+      .arabic-quote {
+        direction: rtl;
+        font-family: 'Noto Naskh Arabic', serif;
+        font-size: 1.8rem;
+        line-height: 1.6;
+        color: #f8f8f8;
+        
+        .quote-line {
+          margin-bottom: 1.5rem;
+          
+          &.highlight {
+            color: #0f0;
+            font-weight: 600;
+            position: relative;
+            padding-top: 1rem;
+            
+            &::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 100px;
+              height: 2px;
+              background: linear-gradient(90deg, rgba(0,255,0,0.5), transparent);
+            }
+          }
+        }
+      }
+    }
+    
+    /* Contact Section */
+    .contact-section {
+      .contact-methods {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+      
+      .contact-method {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: #fff;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+        
+        &:hover {
+          transform: translateX(5px);
+          
+          .contact-icon {
+            background: rgba(0,255,0,0.2);
+          }
+        }
+      }
+      
+      .contact-icon {
+        width: 40px;
+        height: 40px;
+        background: rgba(255,255,255,0.05);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s ease;
+        
+        svg {
+          width: 20px;
+          height: 20px;
+          fill: #0f0;
+        }
+      }
+    }
+    
+    /* Family Message */
+    .family-message {
+      .message-text {
+        font-style: italic;
+        color: #bbb;
+        line-height: 1.7;
+        font-size: 1.05rem;
+        border-left: 2px solid rgba(0,255,0,0.3);
+        padding-left: 1.5rem;
+      }
+    }
+    
+    /* Footer Bottom */
+    .footer-bottom {
+      grid-column: 1 / -1;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      .signature {
+        color: rgba(255,255,255,0.6);
+        font-size: 0.9rem;
+      }
+      
+      .footer-decoration {
+        display: flex;
+        gap: 0.8rem;
+        
+        .dot {
+          width: 8px;
+          height: 8px;
+          background: rgba(0,255,0,0.5);
+          border-radius: 50%;
+          
+          &:nth-child(2) {
+            background: rgba(0,255,0,0.3);
+          }
+          
+          &:nth-child(3) {
+            background: rgba(0,255,0,0.1);
+          }
+        }
+      }
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      padding: 3rem 1.5rem;
+      
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      
+      .quote-section {
+        flex-direction: column;
+        
+        .arabic-quote {
+          font-size: 1.4rem;
+        }
+      }
+      
+      .footer-bottom {
+        margin-top: 3rem;
+      }
+    }
+  }

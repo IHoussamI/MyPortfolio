@@ -1,0 +1,619 @@
+<section class="hero-section" id="home">
+  <div class="matrix-grid"></div>
+  <div class="scanlines"></div>
+  <div class="terminal-window">
+    <div class="terminal-bar">
+      <div class="terminal-controls">
+        <span class="control close"></span>
+        <span class="control minimize"></span>
+        <span class="control maximize"></span>
+      </div>
+      <div class="terminal-title">{{ 'WELCOME' | translate }}</div>
+      <div class="connection-indicator">
+        <span class="pulse-dot"></span>
+        <span>{{ 'CONNECTED' | translate }}</span>
+
+      </div>
+    </div>
+    <div class="terminal-body">
+      <div class="hero-content">
+        <div class="profile-section">
+          <div class="profile-frame">
+            <img src="/MyPhoto.jpeg" alt="Houssam Mesk" class="profile-image">
+            <div class="profile-glow"></div>
+            <div class="profile-pulse"></div>
+            <div class="tech-circle angular"></div>
+            <div class="tech-circle typescript"></div>
+            <div class="tech-circle node"></div>
+          </div>
+          <div class="status-badge">
+            <span class="active-dot"></span>
+            <span>{{ 'FREELANCE_AVAILABLE' | translate }}</span>
+          </div>
+        </div>
+
+        <div class="info-section">
+          <h1 class="name">
+            <span class="name-text">{{ name }}</span>
+            <span class="typing-cursor">|</span>
+            <div class="name-highlight"></div>
+          </h1>
+          <div class="terminal-commands">
+            <div class="command-line">
+              <span class="prompt">></span>
+              <span class="command">whoami:</span>
+              <span class="output">{{ title | translate }}</span>
+            </div>
+            <div class="command-line">
+              <span class="prompt">></span>
+              <span class="command">status --current:</span>
+              <span class="output highlight">{{ status | translate }}</span>
+            </div>
+            <div class="command-line">
+              <span class="prompt">></span>
+              <span class="command">cat education.txt:</span>
+              <span class="output">{{ education | translate }}</span>
+            </div>
+          </div>
+          <div class="skills-container">
+            <div class="section-header">
+              <span class="section-icon">❯</span>
+              <span>{{ 'PRIMARY_SKILLSET' | translate }}</span>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-pill angular">
+                <i class="fab fa-angular"></i>
+                <span>Angular</span>
+              </div>
+              <div class="skill-pill typescript">
+                <i class="fas fa-code"></i>
+                <span>React</span>
+              </div>
+              <div class="skill-pill Spring">
+                <i class="fas fa-leaf"></i>
+                <span>Spring Boot</span>
+              </div>
+            </div>
+          </div>
+          <div class="social-container">
+            <div class="section-header">
+              <span class="section-icon">❯</span>
+              <span>{{ 'CONNECT' | translate }}</span>
+            </div>
+            <div class="social-buttons">
+              <a href="https://www.linkedin.com/in/mesk-houssam/" target="_blank" class="social-btn linkedin">
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+                <span class="link-arrow">↗</span>
+              </a>
+              <a href="https://github.com/IHoussamI" target="_blank" class="social-btn github">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+                <span class="link-arrow">↗</span>
+              </a>
+              <button class="social-btn download" (click)="downloadCV()">
+                <i class="fas fa-file-download"></i>
+                <span>{{ 'DOWNLOAD_CV' | translate }}</span>
+                <span class="link-arrow">↓</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT ME -->
+<section class="about-section" id="about">
+  <h2 class="section-title">{{ 'ABOUT_ME' | translate }}</h2>
+  <div class="matrix-grid"></div>
+  <div class="scanlines"></div>
+  <div class="terminal-window">
+    <div class="terminal-bar">
+      <div class="terminal-controls">
+        <span class="control close"></span>
+        <span class="control minimize"></span>
+        <span class="control maximize"></span>
+      </div>
+      <div class="terminal-title">houssam&#64;terminal:~$ ./about --full --bio --education</div>
+      <div class="connection-indicator">
+        <span class="pulse-dot"></span>
+        <span>LOADING PERSONAL NARRATIVE...</span>
+      </div>
+    </div>
+
+    <div class="terminal-body">
+      <div class="bio-section">
+        <div class="command-line">
+          <span class="prompt">></span>
+          <span class="command">cat bio.txt --decrypt</span>
+          <span class="typing-indicator"></span>
+        </div>
+        <div class="bio-content">
+          <div class="bio-text">
+            <p class="typing-animation">
+              <span class="line">{{ 'BIO_LINE_1' | translate }}</span>
+              <span class="line">{{ 'BIO_LINE_2' | translate }}</span>
+              <span class="line">{{ 'BIO_LINE_3' | translate }}</span>
+              <span class="line">{{ 'BIO_LINE_4' | translate }}</span>
+              <span class="line">{{ 'BIO_LINE_5' | translate }}</span>
+              <span class="line">{{ 'BIO_LINE_6' | translate }}</span>
+              <span class="line">{{ 'BIO_LINE_7' | translate }}</span>
+            </p>
+          </div>
+          <div class="bio-decoration">
+            <div class="circuit-line horizontal"></div>
+            <div class="circuit-line vertical"></div>
+            <div class="chip"></div>
+          </div>
+        </div>
+      </div>
+      <div class="education-section">
+        <div class="command-line">
+          <span class="prompt">></span>
+          <span class="command">education --timeline --visual</span>
+        </div>
+        <div class="timeline-container">
+          <div class="timeline-path"></div>
+          
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-core"></div>
+              <div class="marker-pulse"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-year">2021-2024</div>
+              <div class="timeline-content">
+                <h3 class="institution">
+                  <i class="fas fa-graduation-cap"></i>
+                  Université Mundiapolis
+                </h3>
+                <div class="location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  Casablanca, Morocco
+                </div>
+                <div class="degree">Cycle d'Ingénieur en Informatique</div>
+                <div class="timeline-tech">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">Angular</span>
+                  <span class="tech-tag">Full Stack</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-core"></div>
+              <div class="marker-pulse"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-year">2019-2021</div>
+              <div class="timeline-content">
+                <h3 class="institution">
+                  <i class="fas fa-laptop-code"></i>
+                  EST École Supérieure de Technologie
+                </h3>
+                <div class="location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  Oujda, Morocco
+                </div>
+                <div class="degree">Administrateur Système et Réseaux</div>
+                <div class="timeline-tech">
+                  <span class="tech-tag">Réseaux</span>
+                  <span class="tech-tag">Systèmes</span>
+                  <span class="tech-tag">Linux</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-core"></div>
+              <div class="marker-pulse"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-year">2018-2019</div>
+              <div class="timeline-content">
+                <h3 class="institution">
+                  <i class="fa-solid fa-school"></i>
+                  Lycée Zineb El Nafsaouiya
+                </h3>
+                <div class="location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  Oujda, Morocco
+                </div>
+                <div class="degree">Baccalauréat</div>
+                <div class="timeline-tech">
+                  <span class="tech-tag">Fondamentaux</span>
+                  <span class="tech-tag">Sciences</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MY PROJECTS -->
+<!-- MY PROJECTS -->
+<section class="projects-section" id="projects">
+  <h2 class="section-title">{{ 'MY_PROJECTS' | translate }}</h2>
+
+  <div class="matrix-grid"></div>
+  <div class="scanlines"></div>
+  <div class="terminal-window">
+    <div class="terminal-bar">
+      <div class="terminal-controls">
+        <span class="control close"></span>
+        <span class="control minimize"></span>
+        <span class="control maximize"></span>
+      </div>
+      <div class="terminal-title">houssam&#64;terminal:~$ ./projects --websites --fullpage</div>
+      <div class="connection-indicator">
+        <span class="pulse-dot"></span>
+        <span>VIEWING PROJECTS</span>
+      </div>
+    </div>
+
+    <div class="terminal-body">
+      <div class="projects-gallery">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="command-line">
+              <span class="prompt">></span>
+              <span class="command">ls -la project_1/</span>
+            </div>
+            <h3 class="project-title">LineSat</h3>
+            <div class="project-tech">
+              <span class="tech-badge angular">Angular</span>
+              <span class="tech-badge spring">Spring Boot</span>
+              <span class="tech-badge mysql">MySQL</span>
+            </div>
+          </div>
+          
+          <div class="project-preview">
+            <div class="browser-frame">
+              <div class="browser-controls">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-url">https://line-sat.com</div>
+              </div>
+              <img src="/LineSat/LineSat.webp" alt="LineSat" class="project-screenshot preview-image" loading="lazy">
+              <button class="view-more-btn" (click)="openGallery(0)">
+                <i class="fas fa-expand"></i> VIEW MORE SCREENS
+              </button>
+            </div>
+            <div class="project-description">
+              <div class="description-content">
+                <h4 class="description-title">Project Details</h4>
+                <p class="description-text"><p [innerHTML]="'PROJECT1_DESC' | translate"></p>                
+                <div class="project-features">
+                  <div class="feature">
+                    <i class="fas fa-code feature-icon"></i>
+                    <span class="feature-text">Angular, Spring Boot, MySQL</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-layer-group feature-icon"></i>
+                    <span class="feature-text">Full-stack architecture</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-mobile-alt feature-icon"></i>
+                    <span class="feature-text">Responsive design</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="project-links">
+                <a href="https://github.com/IHoussamI/LineSat" class="project-link">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-separator">Next Project</div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="command-line">
+              <span class="prompt">></span>
+              <span class="command">ls -la project_2/</span>
+            </div>
+            <h3 class="project-title">MacMarket</h3>
+            <div class="project-tech">
+              <span class="tech-badge angular">Angular</span>
+              <span class="tech-badge spring">Spring Boot</span>
+              <span class="tech-badge mysql">MySQL</span>
+            </div>
+          </div>
+          
+          <div class="project-preview">
+            <div class="browser-frame">
+              <div class="browser-controls">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-url">https://macmarket.com</div>
+              </div>
+              <img src="/macMarket/landing-page.webp" alt="MacMarket" class="project-screenshot preview-image" loading="lazy">
+              <button class="view-more-btn" (click)="openGallery(1)">
+                <i class="fas fa-expand"></i> VIEW MORE SCREENS
+              </button>
+            </div>
+            <div class="project-description">
+              <div class="description-content">
+                <h4 class="description-title">Project Details</h4>
+                <div class="description-text" [innerHTML]="'PROJECT2_DESC' | translate"></div>
+                <div class="project-features">
+                  <div class="feature">
+                    <i class="fas fa-code feature-icon"></i>
+                    <span class="feature-text">Angular, Spring Boot, MySQL</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fa fa-line-chart feature-icon"></i>
+                    <span class="feature-text">Analytics Dashboard</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-layer-group feature-icon"></i>
+                    <span class="feature-text">Responsive design</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-mobile-alt feature-icon"></i>
+                    <span class="feature-text">Secure Payments</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="project-links">
+                <a href="https://github.com/IHoussamI/MacMarket" class="project-link">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-separator">Next Project</div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="command-line">
+              <span class="prompt">></span>
+              <span class="command">ls -la project_3/</span>
+            </div>
+            <h3 class="project-title">BingeBear</h3>
+            <div class="project-tech">
+              <span class="tech-badge angular">Angular</span>
+              <span class="tech-badge spring">Spring Boot</span>
+              <span class="tech-badge mysql">MySQL</span>
+            </div>
+          </div>
+          
+          <div class="project-preview">
+            <div class="browser-frame">
+              <div class="browser-controls">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-url">https://bingebear.com</div>
+              </div>
+              <img src="/BingeBear/landing-page.webp" alt="BingeBear" class="project-screenshot preview-image" loading="lazy">
+              <button class="view-more-btn" (click)="openGallery(2)">
+                <i class="fas fa-expand"></i> VIEW MORE SCREENS
+              </button>
+            </div>
+            <div class="project-description">
+              <div class="description-content">
+                <h4 class="description-title">Project Details</h4>
+                <div class="description-text" [innerHTML]="'PROJECT3_DESC' | translate"></div>
+                <div class="project-features">
+                  <div class="feature">
+                    <i class="fas fa-code feature-icon"></i>
+                    <span class="feature-text">Angular, Spring Boot, MySQL</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-globe-europe feature-icon"></i>
+                    <span class="feature-text">Irish Market Focus</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-tachometer-alt feature-icon"></i>
+                    <span class="feature-text">Performance Optimized</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="project-links">
+                <a href="https://github.com/IHoussamI/BingeBear" class="project-link">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Modal -->
+  <div class="gallery-modal" [class.active]="galleryActive">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>{{projects[activeProjectIndex].title}}</h3>
+        <button class="close-modal" (click)="closeGallery()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="modal-gallery">
+        <img *ngFor="let img of projects[activeProjectIndex]?.images" 
+             [src]="img.src" 
+             [alt]="img.alt"
+             [class.active]="img === activeImage"
+             loading="lazy">
+      </div>
+      
+      <div class="modal-nav">
+        <button class="modal-nav-btn prev" (click)="prevImage()">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="image-counter">
+          {{currentImageIndex + 1}} / {{projects[activeProjectIndex].images.length}}
+        </div>
+        <button class="modal-nav-btn next" (click)="nextImage()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- MY EXPERIENCES -->
+<section class="experiences-section" id="experiences">
+  <h2 class="section-title">{{ 'MY_EXPERIENCES' | translate }}</h2>
+
+  <div class="matrix-grid"></div>
+  <div class="scanlines"></div>
+  <div class="terminal-window">
+    <div class="terminal-bar">
+      <div class="terminal-controls">
+        <span class="control close"></span>
+        <span class="control minimize"></span>
+        <span class="control maximize"></span>
+      </div>
+      <div class="terminal-title">houssam&#64;terminal:~$ ./experiences --professional --fullpage</div>
+      <div class="connection-indicator">
+        <span class="pulse-dot"></span>
+        <span>VIEWING EXPERIENCES</span>
+      </div>
+    </div>
+    <div class="terminal-body">
+      <div class="experiences-timeline">
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="command-line">
+              <span class="prompt">></span>
+              <span class="command">cat freelance_experience.txt</span>
+            </div>
+            <h3 class="experience-title">Freelance - Développeur Full-Stack</h3>
+            <div class="experience-period">Janvier 2025 – Présent</div>
+          </div>
+          
+          <div class="experience-content">
+            <ul class="experience-tasks">
+              <li>Conception et développement des applications de commerce  web full-stack avec Angular pour le front-end et Spring Boot pour le back-end</li>
+              <li>Mise en place d'une authentification et d'une autorisation sécurisées des utilisateurs à l'aide de JWT</li>
+              <li>Création d'API RESTful pour la gestion des utilisateurs, des produits et du panier</li>
+              <li>Déploiement du back-end sur un serveur VPS Linux avec configuration manuelle de l'environnement</li>
+              <li>Conception d'une interface responsive, adaptée aux mobiles</li>
+            </ul>
+            
+            <div class="experience-tech">
+              <span class="tech-badge angular">Angular</span>
+              <span class="tech-badge spring">Spring Boot</span>
+              <span class="tech-badge mysql">MySQL</span>
+              <span class="tech-badge jwt">JWT</span>
+              <span class="tech-badge linux">Linux VPS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="command-line">
+              <span class="prompt">></span>
+              <span class="command">cat qualitas_experience.txt</span>
+            </div>
+            <h3 class="experience-title">Stage - QUALITAS, Casablanca</h3>
+            <div class="experience-period">Mai 2024 – Août 2024</div>
+          </div>
+          
+          <div class="experience-content">
+            <ul class="experience-tasks">
+              <li>Implémentation d'une solution GMAO complète, incluant l'installation sur site</li>
+              <li>Conception et déploiement d'un tableau de bord décisionnel avec solution BI</li>
+              <li>Proposition et mise en oeuvre d'évolutions fonctionnelles et techniques</li>
+              <li>Collaboration avec l'équipe informatique pour maintenance et mises à jour</li>
+            </ul>
+            
+            <div class="experience-tech">
+              <span class="tech-badge jasper">JasperSoft</span>
+              <span class="tech-badge plsql">PL/SQL</span>
+              <span class="tech-badge java">Java</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="command-line">
+              <span class="prompt">></span>
+              <span class="command">cat ahlamedia_experience.txt</span>
+            </div>
+            <h3 class="experience-title">Stage - Ahla Media, Casablanca</h3>
+            <div class="experience-period">Février 2023 – Mai 2023</div>
+          </div>
+          
+          <div class="experience-content">
+            <ul class="experience-tasks">
+              <li>Maintenance du site web existant pour garantir performance et fiabilité</li>
+              <li>Conception de maquettes modernes et ergonomiques avec Figma</li>
+              <li>Développement d'un site e-commerce complet pour la vente de produits</li>
+            </ul>
+            
+            <div class="experience-tech">
+              <span class="tech-badge figma">Figma</span>
+              <span class="tech-badge java">Java</span>
+              <span class="tech-badge spring">Spring Boot</span>
+              <span class="tech-badge mongo">MongoDB</span>
+              <span class="tech-badge react">React</span>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="command-line">
+              <span class="prompt">></span>
+              <span class="command">cat chu_experience.txt</span>
+            </div>
+            <h3 class="experience-title">Stage - CHU Mohammed VI, Oujda</h3>
+            <div class="experience-period">Juin 2022 – Août 2022</div>
+          </div>
+          
+          <div class="experience-content">
+            <ul class="experience-tasks">
+              <li>Conception et développement d'un site web "Pharmacovigilance"</li>
+              <li>Facilitation de la communication entre patients et médecins</li>
+            </ul>
+            
+            <div class="experience-tech">
+              <span class="tech-badge wordpress">WordPress</span>
+              <span class="tech-badge html">HTML</span>
+              <span class="tech-badge css">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+</section>
+
