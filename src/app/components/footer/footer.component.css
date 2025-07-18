@@ -155,10 +155,11 @@
       .message-text {
         font-style: italic;
         color: #bbb;
-        line-height: 1.7;
+        line-height: 1.2;
         font-size: 1.05rem;
         border-left: 2px solid rgba(0,255,0,0.3);
         padding-left: 1.5rem;
+
       }
     }
     
