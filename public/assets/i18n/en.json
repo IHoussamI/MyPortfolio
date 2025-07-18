@@ -7,6 +7,8 @@
   "DOWNLOAD_CV": "Download CV",
   "ABOUT_ME": "About Me",
   "PROJECTS": "Projects",
+  "MY_PROJECTS":"My projects",
+
   "HOME": "Home",
   "EDUCATION": "Education",
   "TITLE": "Software Engineer",
@@ -22,5 +24,6 @@
   "PROJECT1_DESC": "LineSat is a modern web platform designed to simplify IPTV subscription sales for clients in the European region.<br><br>Built with a sleek and user-friendly interface, it ensures a smooth experience for both users and administrators.<br><br><strong>Main Features:</strong><br>📩 Free trial requests with email verification<br>💳 Subscription checkout with dynamic pricing<br>🔐 Admin authentication with secure login<br>📊 Admin dashboard showing total users, orders, and trial requests<br>📄 Full access to user-submitted data<br><br>All data is securely stored using a MySQL database, ensuring high performance and reliability.",
   "PROJECT2_DESC": "BingBear is a sleek and modern subscription platform tailored for the Irish market.<br><br>🌐 Built using Angular 18 and Spring Boot (Java 17), with MySQL.<br><br>📩 Features include trial account requests with email verification, a full subscription checkout process, and a secure admin dashboard.<br><br>📊 The dashboard displays total users, orders, requests, and full client details.",
   "PROJECT3_DESC": "BingBear is a stylish and responsive IPTV subscription platform tailored for the Irish market.<br><br>Focused on localization and user experience, it delivers a smooth and professional interface for both customers and administrators.<br><br><strong>Main Features:</strong><br>🧪 Free trial sign-up with email verification<br>🛍️ Subscription selection with streamlined checkout<br>🔐 Admin login with secure access control<br>📈 Interactive dashboard with user stats, order tracking, and trial requests<br>📋 Full view of all submitted customer information<br><br>All data is securely handled using a MySQL database, ensuring speed and stability.",
-  "GRATITUDE" : "Thank you to my little family for your unconditional support and endless love.<br><br>You are my constant source of inspiration. ❤ "
+  "GRATITUDE" : "Thank you to my little family for your unconditional support and endless love.<br><br>You are my constant source of inspiration. ❤ ",
+  "Stay Connected":"Stay Connected"
 }

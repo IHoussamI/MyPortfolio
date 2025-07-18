@@ -19,7 +19,7 @@
       <div class="hero-content">
         <div class="profile-section">
           <div class="profile-frame">
-            <img src="/MyPhoto.jpeg" alt="Houssam Mesk" class="profile-image">
+            <img src="/MyPhoto.jpeg" alt="Houssam Mesk photo " as="image" rel="preload" class="profile-image">
             <div class="profile-glow"></div>
             <div class="profile-pulse"></div>
             <div class="tech-circle angular"></div>
@@ -81,19 +81,19 @@
               <span>{{ 'CONNECT' | translate }}</span>
             </div>
             <div class="social-buttons">
-              <a href="https://www.linkedin.com/in/mesk-houssam/" target="_blank" class="social-btn linkedin">
+              <a href="https://www.linkedin.com/in/mesk-houssam/" target="_blank" class="social-btn linkedin" aria-label="LinkedIn profile">
                 <i class="fab fa-linkedin-in"></i>
                 <span>LinkedIn</span>
                 <span class="link-arrow">↗</span>
               </a>
-              <a href="https://github.com/IHoussamI" target="_blank" class="social-btn github">
+              <a href="https://github.com/IHoussamI" rel="noopener noreferrer" target="_blank" class="social-btn github" aria-label="GitHub profile">
                 <i class="fab fa-github"></i>
                 <span>GitHub</span>
                 <span class="link-arrow">↗</span>
               </a>
               <button class="social-btn download" (click)="downloadCV()">
-                <i class="fas fa-file-download"></i>
-                <span>{{ 'DOWNLOAD_CV' | translate }}</span>
+                <i class="fas fa-file-download" aria-label="Curriculum vitæ"></i>
+                <span  >{{ 'DOWNLOAD_CV' | translate }}</span>
                 <span class="link-arrow">↓</span>
               </button>
             </div>
@@ -242,7 +242,6 @@
 </section>
 
 <!-- MY PROJECTS -->
-<!-- MY PROJECTS -->
 <section class="projects-section" id="projects">
   <h2 class="section-title">{{ 'MY_PROJECTS' | translate }}</h2>
 
@@ -265,7 +264,7 @@
     <div class="terminal-body">
       <div class="projects-gallery">
         <!-- Project 1 -->
-        <div class="project-card">
+        <article class="project-card">
           <div class="project-header">
             <div class="command-line">
               <span class="prompt">></span>
@@ -289,7 +288,7 @@
               </div>
               <img src="/LineSat/LineSat.webp" alt="LineSat" class="project-screenshot preview-image" loading="lazy">
               <button class="view-more-btn" (click)="openGallery(0)">
-                <i class="fas fa-expand"></i> VIEW MORE SCREENS
+                <i class="fas fa-expand" aria-hidden="true" ></i> VIEW MORE SCREENS
               </button>
             </div>
             <div class="project-description">
@@ -313,18 +312,18 @@
               </div>
               
               <div class="project-links">
-                <a href="https://github.com/IHoussamI/LineSat" class="project-link">
+                <a href="https://github.com/IHoussamI/LineSat"  rel="noopener noreferrer" class="project-link">
                   <i class="fab fa-github"></i> Source Code
                 </a>
               </div>
             </div>
           </div>
-        </div>
+        </article>
 
         <div class="project-separator">Next Project</div>
 
         <!-- Project 2 -->
-        <div class="project-card">
+        <article class="project-card">
           <div class="project-header">
             <div class="command-line">
               <span class="prompt">></span>
@@ -348,7 +347,7 @@
               </div>
               <img src="/macMarket/landing-page.webp" alt="MacMarket" class="project-screenshot preview-image" loading="lazy">
               <button class="view-more-btn" (click)="openGallery(1)">
-                <i class="fas fa-expand"></i> VIEW MORE SCREENS
+                <i class="fas fa-expand" aria-hidden="true"></i> VIEW MORE SCREENS
               </button>
             </div>
             <div class="project-description">
@@ -376,18 +375,18 @@
               </div>
               
               <div class="project-links">
-                <a href="https://github.com/IHoussamI/MacMarket" class="project-link">
+                <a href="https://github.com/IHoussamI/MacMarket"  rel="noopener noreferrer" class="project-link">
                   <i class="fab fa-github"></i> Source Code
                 </a>
               </div>
             </div>
           </div>
-        </div>
+        </article>
 
         <div class="project-separator">Next Project</div>
 
         <!-- Project 3 -->
-        <div class="project-card">
+        <article class="project-card">
           <div class="project-header">
             <div class="command-line">
               <span class="prompt">></span>
@@ -411,7 +410,7 @@
               </div>
               <img src="/BingeBear/landing-page.webp" alt="BingeBear" class="project-screenshot preview-image" loading="lazy">
               <button class="view-more-btn" (click)="openGallery(2)">
-                <i class="fas fa-expand"></i> VIEW MORE SCREENS
+                <i class="fas fa-expand" aria-hidden="true" ></i> VIEW MORE SCREENS
               </button>
             </div>
             <div class="project-description">
@@ -435,19 +434,19 @@
               </div>
               
               <div class="project-links">
-                <a href="https://github.com/IHoussamI/BingeBear" class="project-link">
+                <a href="https://github.com/IHoussamI/BingeBear"  rel="noopener noreferrer" class="project-link">
                   <i class="fab fa-github"></i> Source Code
                 </a>
               </div>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </div>
 
   <!-- Gallery Modal -->
-  <div class="gallery-modal" [class.active]="galleryActive">
+  <div class="gallery-modal" [class.active]="galleryActive" role="dialog"  aria-modal="true">
     <div class="modal-content">
       <div class="modal-header">
         <h3>{{projects[activeProjectIndex].title}}</h3>
@@ -504,7 +503,7 @@
     </div>
     <div class="terminal-body">
       <div class="experiences-timeline">
-        <div class="experience-card">
+        <article class="experience-card">
           <div class="experience-header">
             <div class="command-line">
               <span class="prompt">></span>
@@ -531,9 +530,9 @@
               <span class="tech-badge linux">Linux VPS</span>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="experience-card">
+        <article class="experience-card">
           <div class="experience-header">
             <div class="command-line">
               <span class="prompt">></span>
@@ -557,9 +556,9 @@
               <span class="tech-badge java">Java</span>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="experience-card">
+        <article class="experience-card">
           <div class="experience-header">
             <div class="command-line">
               <span class="prompt">></span>
@@ -584,10 +583,10 @@
               <span class="tech-badge react">React</span>
             </div>
           </div>
-        </div>
+        </article>
 
         
-        <div class="experience-card">
+        <article class="experience-card">
           <div class="experience-header">
             <div class="command-line">
               <span class="prompt">></span>
@@ -609,7 +608,7 @@
               <span class="tech-badge css">CSS</span>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </div>

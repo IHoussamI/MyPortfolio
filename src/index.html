@@ -1,13 +1,34 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>PortfolioMesk</title>
+  <title>Houssam Mesk | Full-Stack Developer</title>
   <base href="/">
+
+  <!-- Primary Meta -->
+  <meta name="description" content="Portfolio de Houssam Mesk - Développeur Full-Stack Angular/Spring Boot">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="/favicon.jpg">
+
+  <!-- Social Sharing -->
+  <meta property="og:title" content="Houssam Mesk | Full-Stack Developer">
+  <meta property="og:description" content="Portfolio avec interface terminal">
+  <meta property="og:image" content="https://yourdomain.com/MyPhoto.jpeg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:type" content="website">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/MyPhoto.jpeg" as="image">
 </head>
+
 <body>
-  <app-root></app-root>
+  <app-root></app-root> <!-- Angular will render here -->
+
+  <script src="polyfills.js" type="module"></script>
+  <script src="main.js" type="module"></script>
 </body>
 </html>
