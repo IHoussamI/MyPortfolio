@@ -8,6 +8,7 @@
   "ABOUT_ME": "À propos de moi",
   "PROJECTS": "Projets",
   "MY_PROJECTS":"Mes projets",
+  "MY_EXPERIENCES":"Mes expériences",
   "HOME": "Accueil",
   "EDUCATION": "Éducation",
   "TITLE": "Ingénieur logiciel",
@@ -24,7 +25,8 @@
   "PROJECT2_DESC": "BingBear est une plateforme d’abonnement moderne et élégante, conçue pour le marché irlandais.<br><br>Développée avec Angular 18, Spring Boot (Java 17) et MySQL.<br><br>Elle propose des demandes de comptes d’essai avec vérification par e-mail, un processus complet de souscription, ainsi qu’un tableau de bord admin sécurisé.<br><br>Le tableau de bord affiche le nombre total d’utilisateurs, de commandes, de demandes, ainsi que les détails complets des clients.",
   "PROJECT3_DESC": "BingBear est une plateforme d’abonnement IPTV stylée et responsive, adaptée au marché irlandais.<br><br>Axée sur la localisation et l’expérience utilisateur, elle offre une interface fluide et professionnelle, tant pour les clients que pour les administrateurs.<br><br><strong>Fonctionnalités principales :</strong><br>🧪 Inscription à un essai gratuit avec vérification par e-mail<br>🛍️ Sélection d’abonnement avec processus de paiement simplifié<br>🔐 Connexion admin avec contrôle d’accès sécurisé<br>📈 Tableau de bord interactif avec statistiques utilisateurs, suivi des commandes et des essais<br>📋 Vue complète de toutes les informations client soumises<br><br>Toutes les données sont gérées de manière sécurisée via une base de données MySQL, garantissant rapidité et stabilité.",
   "GRATITUDE" : "Merci à ma petite famille pour votre soutien inconditionnel et votre amour sans fin.<br><br>Vous êtes ma source d'inspiration constante. ❤",
-  "Stay Connected": "Rester connecté"
+  "Stay Connected": "Rester connecté",
+  "SIGNATURE":" © 2025 Houssam Mesk. Portfolio développé entièrement from scratch.<br><br>Ce site est à but de démonstration uniquement. Je ne suis pas responsable du contenu ou de la gestion des sites hébergés mentionnés."
 
 
 }

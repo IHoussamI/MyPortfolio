@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -99,8 +99,29 @@ export class HeroComponent {
     }
   }
 
-  
+  // Profile Photo Modal functionality
+  profileModalActive = false;
 
-  
+  openProfileModal() {
+    this.profileModalActive = true;
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeProfileModal() {
+    this.profileModalActive = false;
+    document.body.style.overflow = '';
+  }
+
+  // Handle keyboard events for profile modal
+  @HostListener('document:keydown', ['$event'])
+  onKeyDown(event: KeyboardEvent) {
+    if (event.key === 'Escape') {
+      if (this.profileModalActive) {
+        this.closeProfileModal();
+      } else if (this.galleryActive) {
+        this.closeGallery();
+      }
+    }
+  }
 }
 

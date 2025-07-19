@@ -6,35 +6,37 @@
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
   position: relative;
   z-index: 1000;
+  animation: terminal-glow 3s infinite alternate;
 }
 
 .terminal-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 15px;
+  padding: clamp(0.5rem, 2vw, 0.8rem) clamp(0.5rem, 2vw, 1rem);
   background-color: rgba(0, 0, 0, 0.8);
   border-bottom: 1px solid rgba(0, 255, 0, 0.3);
-  gap: 15px;
+  gap: clamp(0.5rem, 2vw, 1rem);
+  flex-wrap: wrap;
 }
 
 .terminal-controls {
   display: flex;
-  gap: 8px;
+  gap: clamp(0.3rem, 1vw, 0.5rem);
   flex-shrink: 0;
 }
 
 .control {
   display: inline-block;
-  width: 12px;
-  height: 12px;
+  width: clamp(0.6rem, 2vw, 0.75rem);
+  height: clamp(0.6rem, 2vw, 0.75rem);
   border-radius: 50%;
   cursor: pointer;
   transition: transform 0.2s ease;
+}
 
-  &:hover {
-    transform: scale(1.1);
-  }
+.control:hover {
+  transform: scale(1.1);
 }
 
 .close {
@@ -51,52 +53,55 @@
 
 .terminal-title {
   color: #0f0;
-  font-size: 0.9rem;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   flex-grow: 1;
   text-align: center;
-  padding: 0 10px;
+  padding: 0 clamp(0.5rem, 2vw, 1rem);
   text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+  order: 1;
+  min-width: 100%;
+  margin-top: clamp(0.3rem, 1vw, 0.5rem);
 }
 
 .language-switcher {
   display: flex;
-  gap: 6px;
+  gap: clamp(0.3rem, 1vw, 0.5rem);
   flex-shrink: 0;
+}
 
-  button {
-    background: rgba(0, 20, 0, 0.3);
-    border: 1px solid rgba(0, 255, 0, 0.5);
-    color: #0f0;
-    font-family: 'Courier New', monospace;
-    font-size: 0.75rem;
-    padding: 2px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    outline: none;
+.language-switcher button {
+  background: rgba(0, 20, 0, 0.3);
+  border: 1px solid rgba(0, 255, 0, 0.5);
+  color: #0f0;
+  font-family: 'Courier New', monospace;
+  font-size: clamp(0.6rem, 1.5vw, 0.75rem);
+  padding: clamp(0.1rem, 0.5vw, 0.2rem) clamp(0.5rem, 1.5vw, 1rem);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+}
 
-    &:hover {
-      background: rgba(0, 255, 0, 0.2);
-      box-shadow: 0 0 8px rgba(0, 255, 0, 0.3);
-    }
+.language-switcher button:hover {
+  background: rgba(0, 255, 0, 0.2);
+  box-shadow: 0 0 8px rgba(0, 255, 0, 0.3);
+}
 
-    &.active {
-      background: rgba(0, 255, 0, 0.4);
-      font-weight: bold;
-      box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-    }
-  }
+.language-switcher button.active {
+  background: rgba(0, 255, 0, 0.4);
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
 
 .hacking-nav {
   display: flex;
-  padding: 12px 20px;
-  gap: 20px;
+  padding: clamp(0.5rem, 2vw, 1rem);
+  gap: clamp(0.5rem, 2vw, 1.5rem);
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.7);
@@ -106,45 +111,20 @@
 .nav-link {
   color: #0f0;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 2vw, 1rem);
   transition: all 0.3s ease;
   white-space: nowrap;
-  padding: 5px 10px;
+  padding: clamp(0.2rem, 1vw, 0.4rem) clamp(0.5rem, 1.5vw, 1rem);
   text-shadow: 0 0 3px #0f0;
   display: inline-block;
   transform-origin: center;
-
-  &:hover {
-    transform: scale(1.05);
-    text-shadow: 0 0 15px #0f0;
-    background: rgba(0, 255, 0, 0.1);
-    border-radius: 3px;
-  }
 }
 
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .terminal-bar {
-    flex-wrap: wrap;
-    padding-bottom: 12px;
-  }
-
-  .terminal-title {
-    order: 1;
-    flex: 1 0 100%;
-    margin-top: 8px;
-    text-align: center;
-  }
-
-  .hacking-nav {
-    gap: 12px;
-    padding: 10px;
-  }
-
-  .nav-link {
-    font-size: 0.9rem;
-  }
+.nav-link:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 15px #0f0;
+  background: rgba(0, 255, 0, 0.1);
+  border-radius: 3px;
 }
 
 /* Animation for terminal glow */
@@ -153,6 +133,37 @@
   50% { box-shadow: 0 0 15px rgba(0, 255, 0, 0.8); }
 }
 
-.hacking-header {
-  animation: terminal-glow 3s infinite alternate;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .terminal-title {
+    order: 0;
+    min-width: auto;
+    margin-top: 0;
+    flex-grow: 1;
+  }
+  
+  .hacking-nav {
+    justify-content: center;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .terminal-bar {
+    flex-wrap: nowrap;
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .terminal-title {
+    padding: 0 1rem;
+  }
+  
+  .hacking-nav {
+    padding: 1rem 2rem;
+    gap: 2rem;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+  }
 }
