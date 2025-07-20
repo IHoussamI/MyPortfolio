@@ -1,7 +1,5 @@
-/* hero.component.css */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
-/* Base Styles */
 .hero-section {
   background-color: #0a0a0a;
   color: #fff;
@@ -349,7 +347,6 @@
   animation: pulse 1.5s infinite;
 }
 
-/* Info Section */
 .info-section {
   flex: 1;
 }
@@ -384,7 +381,6 @@
   z-index: 0;
 }
 
-/* Terminal Commands */
 .terminal-commands {
   margin-bottom: 2.5rem;
   background: rgba(0, 10, 0, 0.2);
@@ -421,7 +417,6 @@
   text-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
 }
 
-/* Skills */
 .skills-container {
   margin-bottom: 2.5rem;
 }
@@ -507,7 +502,6 @@
   box-shadow: 0 5px 15px rgba(0, 255, 0, 0.2);
 }
 
-/* Social Buttons */
 .social-container {
   margin-top: 2rem;
 }
@@ -600,7 +594,6 @@
   background: rgba(0, 255, 0, 0.2);
 }
 
-/* Animations */
 @keyframes matrixScroll {
   from {
     background-position: 0 0;
@@ -631,7 +624,6 @@
   }
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
@@ -655,7 +647,7 @@
   }
 }
 
-/* about.component.css */
+/* about section  */
 .about-section {
   background-color: #0a0a0a;
   padding: 4rem 1rem;
@@ -705,7 +697,6 @@
   hyphens: auto;
 }
 
-/* Responsive section titles */
 @media (max-width: 768px) {
   .section-title {
     font-size: 2.5rem;
@@ -783,7 +774,6 @@
   z-index: 2;
 }
 
-/* Bio Section Styles */
 .bio-section {
   margin-bottom: 3rem;
 }
@@ -815,7 +805,7 @@
 .bio-decoration {
   width: 150px;
   position: relative;
-  display: none; /* Show only on larger screens */
+  display: none; 
 }
 
 @media (min-width: 992px) {
@@ -906,7 +896,6 @@
   animation: blink 1s infinite;
 }
 
-/* Enhanced Timeline Styles */
 .timeline-container {
   position: relative;
   padding-left: 60px;
@@ -1034,7 +1023,6 @@
   border: 1px solid rgba(0, 255, 0, 0.3);
 }
 
-/* Animations */
 @keyframes typewriter {
   to { width: 0; }
 }
@@ -1059,7 +1047,6 @@
   50% { opacity: 0.3; }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .bio-content {
     margin-left: 1rem;
@@ -1078,7 +1065,7 @@
   }
 }
 
-/* projects.component.css */
+/* projects section  */
 
 .projects-section {
   background-color: #0a0a0a;
@@ -1388,7 +1375,6 @@
   box-shadow: 0 5px 15px rgba(0, 255, 0, 0.2);
 }
 
-/* Project Description Styles */
 .project-description {
   position: relative;
   flex: 0 0 340px;
@@ -1421,7 +1407,6 @@
   margin-bottom: 1.5rem;
 }
 
-/* Feature Grid - Applied to all projects */
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1454,7 +1439,6 @@
   font-size: 0.85rem;
 }
 
-/* Project Separator */
 .project-separator {
   text-align: center;
   margin: 2rem 0;
@@ -1481,7 +1465,6 @@
   right: 0;
 }
 
-/* Tech Stack - Applied to all projects */
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
@@ -1496,7 +1479,6 @@
   font-weight: bold;
 }
 
-/* Project Links - Applied to all projects */
 .project-links {
   display: flex;
   justify-content: flex-end;
@@ -1540,7 +1522,6 @@
   box-shadow: 0 3px 10px rgba(0, 255, 0, 0.1);
 }
 
-/* Projects Section Responsive */
 @media (max-width: 768px) {
   .project-description {
     flex: 1 1 100%;
@@ -1731,7 +1712,6 @@
   }
 }
 
-/* Gallery Modal */
 .gallery-modal {
   position: fixed;
   top: 0;
@@ -1856,7 +1836,6 @@
   text-align: center;
 }
 
-/* Animations */
 @keyframes matrixScroll {
   from { background-position: 0 0; }
   to { background-position: -1000px -1000px; }
@@ -1868,7 +1847,6 @@
   100% { opacity: 1; }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .project-description {
     flex: 1 1 100%;
@@ -1886,7 +1864,11 @@
     height: 50vh;
   }
 }
+
+
 /* Experiences Section */
+
+
 .experiences-section {
   background-color: #0a0a0a;
   padding: 4rem 1rem;
@@ -1981,7 +1963,6 @@
   gap: 0.8rem;
 }
 
-/* Experiences Section Responsive */
 @media (max-width: 768px) {
   .experiences-section {
     padding: 3rem 1rem;
@@ -2137,7 +2118,6 @@
   }
 }
 
-/* Tablet optimizations for experiences */
 @media (min-width: 769px) and (max-width: 1024px) {
   .experiences-section {
     padding: 3.5rem 1.5rem;
@@ -2188,7 +2168,6 @@
   }
 }
 
-/* Additional tech badges */
 .tech-badge {
 
   
@@ -2257,7 +2236,6 @@
   margin: 0 12px;
 }
 
-/* Projects Section Responsive */
 @media (max-width: 768px) {
   .project-description {
     flex: 1 1 100%;
@@ -2382,7 +2360,6 @@
   }
 }
 
-/* Modal Responsive */
 @media (max-width: 768px) {
   .modal-content {
     width: 95%;
@@ -2459,7 +2436,6 @@
   }
 }
 
-/* General responsive improvements */
 @media (max-width: 1024px) {
   .terminal-window {
     max-width: 95%;
@@ -2476,7 +2452,6 @@
   }
 }
 
-/* Fix for very small screens */
 @media (max-width: 360px) {
   .hero-section {
     padding: 0.5rem;
@@ -2521,7 +2496,6 @@
   }
 }
 
-/* Specific fix for screens around 354px and medium sizes */
 @media (min-width: 361px) and (max-width: 600px) {
   .hero-section {
     padding: 1rem 0 1.5rem 0;
@@ -2608,7 +2582,6 @@
   }
 }
 
-/* Landscape orientation fixes */
 @media (max-height: 600px) and (orientation: landscape) {
   .hero-section {
     min-height: auto;
@@ -2639,7 +2612,6 @@
     padding: 2rem 1rem;
   }
 
-  /* Specific landscape fixes for experiences */
   .experiences-timeline {
     gap: 1.5rem;
   }
@@ -2657,7 +2629,6 @@
   }
 }
 
-/* Additional mobile optimizations */
 @media (max-width: 480px) {
   .terminal-bar {
     padding: 0.8rem 1rem;
@@ -2725,7 +2696,6 @@
   }
 }
 
-/* Very small screens */
 @media (max-width: 320px) {
   .terminal-bar {
     padding: 0.5rem 0.6rem;
@@ -2750,7 +2720,6 @@
   }
 }
 
-/* Profile Photo Modal Styles */
 .profile-modal {
   position: fixed;
   top: 0;
@@ -2814,7 +2783,6 @@
   border-radius: 8px;
 }
 
-/* Responsive styles for profile modal */
 @media (max-width: 768px) {
   .profile-modal-content {
     max-width: 95%;
@@ -2858,7 +2826,6 @@
   }
 }
 
-/* Tablet optimizations */
 @media (min-width: 769px) and (max-width: 1024px) {
   .hero-content {
     gap: 4rem;
@@ -2882,8 +2849,7 @@
   }
 }
 
-/* High DPI displays */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+ @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .matrix-grid {
     background-size: 20px 20px;
   }
@@ -2893,7 +2859,6 @@
   }
 }
 
-/* Print styles */
 @media print {
   .hero-section,
   .about-section,
@@ -2925,5 +2890,16 @@
     background: #f5f5f5 !important;
     color: #333 !important;
   }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+
+.active {
+  opacity: 1;
+  transform: none;
 }
 

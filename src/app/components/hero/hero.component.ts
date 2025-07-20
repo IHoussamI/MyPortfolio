@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { ScrollAnimationDirective } from '../../directives/scroll-animation.directive';
 
 @Component({
   selector: 'app-hero',
-  imports: [CommonModule,TranslateModule],
+  imports: [CommonModule,TranslateModule,ScrollAnimationDirective],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })
