@@ -15,7 +15,7 @@ export class HeaderComponent {
   navLinks = [
     { fragment: 'home', name: 'home', display: 'HOME' },
     { fragment: 'about', name: 'about', display: 'ABOUT_ME' },
-    { fragment: 'education', name: 'education', display: 'EDUCATION' },
+    { fragment: 'experiences', name: 'experiences', display: 'experiences' },
     { fragment: 'projects', name: 'projects', display: 'PROJECTS' },
   ];
 

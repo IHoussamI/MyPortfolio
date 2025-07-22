@@ -70,7 +70,8 @@
   box-shadow: 0 0 30px rgba(0, 255, 0, 0.1);
   max-width: 1200px;
   margin: 2rem auto 3rem auto;
-  background-color: rgba(15, 15, 15, 0.95);
+  /* background-color: rgba(15, 15, 15, 0.95); */
+  background-color: white;
   width: 95%;
   position: relative;
   z-index: 2;

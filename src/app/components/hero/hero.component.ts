@@ -5,7 +5,7 @@ import { ScrollAnimationDirective } from '../../directives/scroll-animation.dire
 
 @Component({
   selector: 'app-hero',
-  imports: [CommonModule,TranslateModule,ScrollAnimationDirective],
+  imports: [CommonModule, TranslateModule, ScrollAnimationDirective],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })
@@ -100,7 +100,6 @@ export class HeroComponent {
     }
   }
 
-  // Profile Photo Modal functionality
   profileModalActive = false;
 
   openProfileModal() {
@@ -113,7 +112,6 @@ export class HeroComponent {
     document.body.style.overflow = '';
   }
 
-  // Handle keyboard events for profile modal
   @HostListener('document:keydown', ['$event'])
   onKeyDown(event: KeyboardEvent) {
     if (event.key === 'Escape') {
@@ -124,5 +122,7 @@ export class HeroComponent {
       }
     }
   }
+
+  
 }
 

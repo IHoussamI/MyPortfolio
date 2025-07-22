@@ -1,0 +1,32 @@
+{
+  "WELCOME": "Bienvenue sur le portfolio de Mesk Houssam",
+  "CONNECTED": "Connecté",
+  "FREELANCE_AVAILABLE": "FREELANCE DISPONIBLE",
+  "PRIMARY_SKILLSET": "SKILLSET PRIMAIRE",
+  "CONNECT": "se connecter",
+  "DOWNLOAD_CV": "Télécharger le CV",
+  "ABOUT_ME": "À propos de moi",
+  "PROJECTS": "Projets",
+  "MY_PROJECTS":"Mes projets",
+  "MY_EXPERIENCES":"Mes expériences",
+  "HOME": "Accueil",
+  "EDUCATION": "Éducation",
+  "TITLE": "Ingénieur logiciel",
+  "STATUS": "Freelancer",
+  "EDUCATION_TEXT": "Diplômé de l’université Mundiapolis",
+  "BIO_LINE_1": "Je suis Houssam Mesk, un passionné d'informatique et d'électronique",
+  "BIO_LINE_2": "depuis mon plus jeune âge, une passion profondément enracinée",
+  "BIO_LINE_3": "que j'ai héritée de mon cher père. Mon parcours dans le domaine",
+  "BIO_LINE_4": "de la technologie a débuté de manière ludique avec les jeux vidéo.",
+  "BIO_LINE_5": "Cependant, ma curiosité naturelle m'a rapidement poussé à",
+  "BIO_LINE_6": "comprendre les coulisses de ces jeux, ce qui m'a amené à",
+  "BIO_LINE_7": "explorer le monde fascinant de la création logicielle.",
+  "PROJECT1_DESC": "LineSat est une plateforme web moderne conçue pour simplifier la vente d'abonnements IPTV aux clients de la région européenne.<br><br>Avec une interface élégante et facile à utiliser, elle garantit une expérience fluide pour les utilisateurs comme pour les administrateurs.<br><br><strong>Fonctionnalités principales :</strong><br>📩 Demandes d'essai gratuit avec vérification par e-mail<br>💳 Paiement des abonnements avec tarification dynamique<br>🔐 Authentification sécurisée pour l’admin<br>📊 Tableau de bord admin affichant le nombre total d’utilisateurs, de commandes et de demandes d’essai<br>📄 Accès complet aux données soumises par les utilisateurs<br><br>Toutes les données sont stockées en toute sécurité dans une base de données MySQL, assurant performance et fiabilité.",
+  "PROJECT2_DESC": "BingBear est une plateforme d’abonnement moderne et élégante, conçue pour le marché irlandais.<br><br>Développée avec Angular 18, Spring Boot (Java 17) et MySQL.<br><br>Elle propose des demandes de comptes d’essai avec vérification par e-mail, un processus complet de souscription, ainsi qu’un tableau de bord admin sécurisé.<br><br>Le tableau de bord affiche le nombre total d’utilisateurs, de commandes, de demandes, ainsi que les détails complets des clients.",
+  "PROJECT3_DESC": "BingBear est une plateforme d’abonnement IPTV stylée et responsive, adaptée au marché irlandais.<br><br>Axée sur la localisation et l’expérience utilisateur, elle offre une interface fluide et professionnelle, tant pour les clients que pour les administrateurs.<br><br><strong>Fonctionnalités principales :</strong><br>🧪 Inscription à un essai gratuit avec vérification par e-mail<br>🛍️ Sélection d’abonnement avec processus de paiement simplifié<br>🔐 Connexion admin avec contrôle d’accès sécurisé<br>📈 Tableau de bord interactif avec statistiques utilisateurs, suivi des commandes et des essais<br>📋 Vue complète de toutes les informations client soumises<br><br>Toutes les données sont gérées de manière sécurisée via une base de données MySQL, garantissant rapidité et stabilité.",
+  "GRATITUDE" : "Merci à ma petite famille pour votre soutien inconditionnel et votre amour sans fin.<br><br>Vous êtes ma source d'inspiration constante. ❤",
+  "Stay Connected": "Rester connecté",
+  "SIGNATURE":" © 2025 Houssam Mesk. Portfolio développé entièrement from scratch.<br><br>Ce site est à but de démonstration uniquement. Je ne suis pas responsable du contenu ou de la gestion des sites hébergés mentionnés."
+
+
+}

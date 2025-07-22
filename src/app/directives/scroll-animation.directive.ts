@@ -9,28 +9,30 @@ export class ScrollAnimationDirective implements OnInit, OnDestroy {
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
   ngOnInit() {
-    // Always add reveal class
-    if (!this.el.nativeElement.classList.contains('terminal-window') &&
-        !this.el.nativeElement.classList.contains('terminal-body')) {
-      this.renderer.addClass(this.el.nativeElement, 'reveal');
-    }
+    this.renderer.addClass(this.el.nativeElement, 'reveal');
+    
     this.observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           this.renderer.addClass(this.el.nativeElement, 'active');
-          console.log('ScrollAnimation: Activated', this.el.nativeElement.className);
-        } else {
-          this.renderer.removeClass(this.el.nativeElement, 'active');
+          setTimeout(() => {
+            this.renderer.removeClass(this.el.nativeElement, 'reveal');
+          }, 1000);
+          this.observer.disconnect();
         }
       },
-      { threshold: 0.10 }
+      { threshold: 0.01 }
     );
-    this.observer.observe(this.el.nativeElement);
+  
+    setTimeout(() => {
+      this.observer.observe(this.el.nativeElement);
+    }, 100);
   }
+  
 
   ngOnDestroy() {
     if (this.observer) {
       this.observer.disconnect();
     }
   }
-}
+} 
