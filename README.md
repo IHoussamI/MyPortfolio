@@ -1,37 +1,35 @@
-# Houssam Mesk - Portfolio
+# Houssam Mesk — Software Engineer Portfolio
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Available-success)](https://IHoussamI.github.io)
-![Cyberpunk Terminal Theme](https://img.shields.io/badge/Theme-Cyberpunk_Terminal-blueviolet)
+Welcome to my portfolio, a modern Angular application designed with a sleek, terminal-inspired user interface. It supports both French and English languages and adapts seamlessly to all screen sizes.
 
-Modern Angular portfolio with terminal-style UI and French/English support.
+## ✨ Key Features
+- 🖥️ Interactive terminal-style UI for a unique browsing experience  
+- 🌐 Bilingual support: French & English (i18n)  
+- 📱 Fully responsive design for mobile and desktop  
+- 💾 Integrated CV download system for quick access to my resume  
 
-## ✨ Features
-- 🖥️ Interactive terminal interface
-- 🌐 Multi-language (EN/FR)
-- 📱 Fully responsive
-- 💾 CV download system
+## 🛠 Technology Stack
+Angular 19 | TypeScript | SCSS | RxJS | GitHub Pages
 
-## 🛠 Tech Stack
-- Angular 19 • TypeScript • SCSS
-- i18n • RxJS • GitHub Pages
-
-## 🔥 Quick Start
+## 🚀 Quick Start
 ```bash
 git clone https://github.com/IHoussamI/Portfolio-Mesk.git
 cd Portfolio-Mesk
 npm install
 ng serve
-📌 Visit Portfolio
+📌 Live Demo
+https://IHoussamI.github.io/
 
-📫 Contact: LinkedIn | Mesk.hsm@gmail.com
-📜 License: MIT
+📫 Contact
+LinkedIn: https://www.linkedin.com/in/mesk-houssam/
+Email: Mesk.hsm@gmail.com
 
+🔮 Upcoming Features
+Project filtering system for easy navigation
 
+Dark/light mode toggle to enhance usability
 
-## 🌟 Coming Soon
-- [ ] Project filtering system
-- [ ] Dark/light mode toggle
-- [ ] Blog integration
+Blog integration to share insights and tutorials
 
-## 🤝 Contributing
-PRs welcome! Please open an issue first to discuss changes.
+🤝 Contributions
+Pull requests are welcome! Please open an issue first to discuss any proposed changes
