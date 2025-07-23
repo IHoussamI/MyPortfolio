@@ -86,16 +86,31 @@
                 <span>LinkedIn</span>
                 <span class="link-arrow">↗</span>
               </a>
-              <a href="https://github.com/IHoussamI" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"  class="social-btn github" aria-label="GitHub profile">
+              <a href="https://github.com/IHoussamI" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" class="social-btn github" aria-label="GitHub profile">
                 <i class="fab fa-github"></i>
                 <span>GitHub</span>
                 <span class="link-arrow">↗</span>
               </a>
-              <button class="social-btn download" (click)="downloadCV()">
-                <i class="fas fa-file-download" aria-label="Curriculum vitæ"></i>
-                <span  >{{ 'DOWNLOAD_CV' | translate }}</span>
-                <span class="link-arrow">↓</span>
-              </button>
+              <div class="download-wrapper">
+                <button class="social-btn download" 
+                        [class.active]="showCVOptions" 
+                        (click)="toggleCVOptions()">
+                  <i class="fas fa-file-download" aria-label="Curriculum vitæ"></i>
+                  <span>{{ 'DOWNLOAD_CV' | translate }}</span>
+                  <span class="link-arrow" [class.rotated]="showCVOptions">↓</span>
+                </button>
+                
+                <div class="cv-options" *ngIf="showCVOptions">
+                  <button class="cv-option" (click)="downloadCV('fr')">
+                    <i class="fas fa-file-alt"></i>
+                    <span>{{ "VERSION-FR" | translate}}</span>
+                  </button>
+                  <button class="cv-option" (click)="downloadCV('en')">
+                    <i class="fas fa-file-alt"></i>
+                    <span>{{ "VERSION-ANG" | translate}}</span>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -252,7 +267,7 @@
 </section>
 
 <!-- MY PROJECTS -->
-<section class="projects-section" id="projects" appScrollAnimation>
+<section class="projects-section" id="projects" >
   <h2 class="section-title">{{ 'MY_PROJECTS' | translate }}</h2>
 
   <div class="matrix-grid"></div>

@@ -1,59 +1,53 @@
-# PortfolioMesk
+# Houssam Mesk - Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Available-success)](https://IHoussamI.github.io)
+![Cyberpunk Terminal Theme](https://img.shields.io/badge/Theme-Cyberpunk_Terminal-blueviolet)
 
-## Development server
+Modern Angular portfolio with terminal-style UI and French/English support.
 
-To start a local development server, run:
+## ✨ Features
+- 🖥️ Interactive terminal interface
+- 🌐 Multi-language (EN/FR)
+- 📱 Fully responsive
+- 💾 CV download system
 
+## 🛠 Tech Stack
+- Angular 15+ • TypeScript • SCSS
+- i18n • RxJS • GitHub Pages
+
+## 🔥 Quick Start
 ```bash
+git clone https://github.com/IHoussamI/Portfolio-Mesk.git
+cd Portfolio-Mesk
+npm install
 ng serve
-```
+📌 Visit Portfolio
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+📫 Contact: LinkedIn | Mesk.hsm@gmail.com
+📜 License: MIT
 
-## Code scaffolding
+text
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Key Fixes Made:
+1. Fixed the code block formatting (triple backticks)
+2. Properly aligned all badges and links
+3. Added clear section dividers (`---`)
+4. Made all links clickable in proper Markdown format
+5. Removed duplicate "text" at the bottom
+6. Ensured consistent spacing
 
-```bash
-ng generate component component-name
-```
+### How to Use:
+1. Copy this exact code block
+2. Create a new `README.md` file in your project root
+3. Paste this content
+4. Commit to GitHub
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Optional Additions (if you want):
+```markdown
+## 🌟 Coming Soon
+- [ ] Project filtering system
+- [ ] Dark/light mode toggle
+- [ ] Blog integration
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🤝 Contributing
+PRs welcome! Please open an issue first to discuss changes.

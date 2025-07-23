@@ -23,9 +23,18 @@ export class HeroComponent {
 
   }
 
-  downloadCV() {
-    const cvUrl = '/document/CV de Houssam Mesk.pdf';
-    window.open(cvUrl, '_blank');
+  downloadCV(language: 'fr' | 'en') { 
+    const cvUrls = {
+      fr: '/document/CV de Houssam Mesk.pdf',
+      en: '/document/CV of Houssam Mesk ( ENLGISH VERSION ).pdf'
+    };
+    window.open(cvUrls[language], '_blank');  
+  }
+  
+  showCVOptions = false;
+  
+  toggleCVOptions() {
+    this.showCVOptions = !this.showCVOptions;
   }
 
   animateBio() {
