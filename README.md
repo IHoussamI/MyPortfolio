@@ -12,7 +12,7 @@ Modern Angular portfolio with terminal-style UI and French/English support.
 - 💾 CV download system
 
 ## 🛠 Tech Stack
-- Angular 15+ • TypeScript • SCSS
+- Angular 19 • TypeScript • SCSS
 - i18n • RxJS • GitHub Pages
 
 ## 🔥 Quick Start
@@ -26,24 +26,8 @@ ng serve
 📫 Contact: LinkedIn | Mesk.hsm@gmail.com
 📜 License: MIT
 
-text
 
-### Key Fixes Made:
-1. Fixed the code block formatting (triple backticks)
-2. Properly aligned all badges and links
-3. Added clear section dividers (`---`)
-4. Made all links clickable in proper Markdown format
-5. Removed duplicate "text" at the bottom
-6. Ensured consistent spacing
 
-### How to Use:
-1. Copy this exact code block
-2. Create a new `README.md` file in your project root
-3. Paste this content
-4. Commit to GitHub
-
-### Optional Additions (if you want):
-```markdown
 ## 🌟 Coming Soon
 - [ ] Project filtering system
 - [ ] Dark/light mode toggle
